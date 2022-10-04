@@ -411,7 +411,7 @@ picture img {
 /* <BLOCK5> ============================================================ */
 .block5 {
    padding: 166px 0px 100px 0px;
-   background: #F4F5F7;
+   background: url('../img/block5/bg/circles2.png') 1788px 1407px no-repeat, url('../img/block5/bg/dots2.png') 343px 1367px no-repeat, url('../img/block5/bg/semicircle.png') 1183px 948px no-repeat, url('../img/block5/bg/circles.png') 75px 849px no-repeat, url('../img/block5/bg/arrows.png') 1842px 536px no-repeat, url('../img/block5/bg/dots.png') 1252px 35px no-repeat, url('../img/block5/bg/oval.png') 204px 83px no-repeat, #F4F5F7;
 }
 .block5__text-arrows {
    margin-bottom: 60px;
@@ -488,7 +488,7 @@ picture img {
    font-size: 20px;
    line-height: 150%;
    color: #424551;
-   background: url('../img/block5/braces.svg') 0 0 no-repeat;
+   background: url('../img/block5/braces.png') 0 0 no-repeat;
    padding: 0px 0px 0px 58px;
    margin-bottom: 24px;
 }
@@ -525,3 +525,68 @@ picture img {
 }
 /* </QUOTE> ============================================================= */
 /* </BLOCK5> ============================================================ */
+
+
+/* <BLOCK6> ============================================================ */
+.block6 {
+   padding: 120px 0px 0px 0px;
+}
+.block6__text-button {
+   margin-bottom: 60px;
+}
+.block6__text {
+   display: inline-block;
+   margin-right: 810px;
+}
+.block6__text-button .title {
+   margin-bottom: 0px;
+}
+.block6__text-button .button1 {
+   width: 159px;
+}
+.block6__blog-cards {
+   
+}
+.blog-cards__item {
+   width: 390px;
+}
+.blog__link {
+   display: block;
+   width: 100px;
+   font-size: 14px;
+   line-height: 150%;
+   color: #424551;
+   padding: 3.5px 8px;
+   border: 1px solid gray;
+   border-radius: 4px;
+}
+.blog__link::before {
+   content: '';
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+   background: url('../img/block6/microfone.svg') no-repeat;
+   margin: 0px 4px -5px 0px;
+   border: 2px solid blue;
+}
+.blog__image {
+   max-width: 100%;
+   border: 3px solid red;
+}
+.blog__time {
+}
+.time__position {
+}
+.time__month {
+}
+.time__minutes {
+}
+.blog__title {
+}
+.blog__text {
+}
+.blog__link-arrow {
+}
+.link-arrow-image {
+}
+/* </BLOCK6> ============================================================ */

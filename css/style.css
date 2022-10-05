@@ -529,7 +529,7 @@ picture img {
 
 /* <BLOCK6> ============================================================ */
 .block6 {
-   padding: 120px 0px 0px 0px;
+   padding: 120px 0px 180px 0px;
 }
 .block6__text-button {
    margin-bottom: 60px;
@@ -547,20 +547,26 @@ picture img {
 .block6__blog-cards {
    
 }
+.block6__blog-cards >*:last-child {
+	margin-right: 0px;
+}
 .blog-cards__item {
+   display: inline-block;
    width: 390px;
+   margin-right: 25px;
 }
 .blog__link {
-   display: block;
-   width: 100px;
+   display: inline-block;
    font-size: 14px;
    line-height: 150%;
+   padding: 0px 8px;
    color: #424551;
-   padding: 3.5px 8px;
-   border: 1px solid gray;
+   background-color: #fff;
    border-radius: 4px;
 }
-.blog__link::before {
+.blog__link.article::before,
+.blog__link.video::before,
+.blog__link.podcast::before {
    content: '';
    display: inline-block;
    width: 20px;
@@ -569,24 +575,81 @@ picture img {
    margin: 0px 4px -5px 0px;
    border: 2px solid blue;
 }
+.blog__link.video::before {
+   background: url('../img/block6/play.svg') no-repeat;
+}
+.blog__link.article::before {
+   background: url('../img/block6/sheet.svg') no-repeat;
+}
 .blog__image {
    max-width: 100%;
    border: 3px solid red;
+   margin-bottom: 16px;
 }
 .blog__time {
+   margin-bottom: 8px;
 }
 .time__position {
+   display: inline-block;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 150%;
+   color: #787A80;
+}
+.time__month::after,
+.time__position::after {
+   display: inline-block;
+   content: '';
+   width: 1px;
+   height: 14px;
+   background-color: #787A80;
+   margin: 0px 12px;
+}
+.time__minutes,
+.time__month {
+   display: inline-block;
+   font-size: 14px;
+   line-height: 150%;
+   color: #787A80;
+}
+.time__minutes::before,
+.time__month::before {
+   display: inline-block;
+   content: '';
+   width: 16px;
+   height: 16px;
+   background: url('../img/block6/calendar.svg') no-repeat;
+   margin: 0px 12px -3px 0px;
+   border: 2px solid blue;
+}
+.time__minutes::before {
+   background: url('../img/block6/clock.svg') no-repeat;
 }
 .time__month {
 }
-.time__minutes {
-}
 .blog__title {
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 150%;
+   color: #1E212C;
+   margin-bottom: 8px;
 }
 .blog__text {
+   line-height: 160%;
+   color: #424551;
+   margin-bottom: 16px;
 }
-.blog__link-arrow {
+.blog__link-arrow span {
+   font-weight: 700;
+   line-height: 160%;
+   color: #1E212C;
+   margin-right: 8px;
 }
-.link-arrow-image {
+.link-arrow-image img {
+   padding: 7px 0px 0px 0px;
+   border: 2px solid blue;
+}
+.blog-cards__item >*:last-child {
+	margin-bottom: 0px;
 }
 /* </BLOCK6> ============================================================ */
